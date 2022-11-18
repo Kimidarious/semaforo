@@ -6,16 +6,16 @@ let intervalId = null;
 const trafficLight = (event) => {
     stopAutomatic();
     turnOn[event.target.id]();
-    
+
 }
 
 const nextIndex = () => colorIndex = colorIndex < 2 ? ++colorIndex : 0;
 
-    // if (colorIndex < 2) {
-    //    colorIndex++ 
-    // }else {
-    //     colorIndex = 0;
-    // }
+// if (colorIndex < 2) {
+//    colorIndex++ 
+// }else {
+//     colorIndex = 0;
+// }
 
 const changeColor = () => {
     const colors = ["red", "yellow", "green"]
